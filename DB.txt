@@ -1,0 +1,13 @@
+DB
+usuario root
+password root
+nombre administracion_usuarios
+
+CREATE DATABASE administracion_usuarios;
+USE administracion_usuarios;
+CREATE TABLE USUARIOS (
+ID INT PRIMARY KEY AUTO_INCREMENT,
+NOMBRE VARCHAR(50) NOT NULL,
+EMAIL VARCHAR(100) NOT NULL UNIQUE,
+EDAD INT
+);
